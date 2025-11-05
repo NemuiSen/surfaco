@@ -6,8 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dynamic = { path = "dynamic" }
-
 bytemuck = { version = "1.13.0", features = ["derive"] }
 futures = { version = "0.3.25", features = ["executor"] }
 glam = { version = "0.22.0", features = ["bytemuck"] }

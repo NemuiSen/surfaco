@@ -161,6 +161,9 @@ impl Surface {
 		engine.register_fn("donut", |u: f32, v: f32, dr: f32, er: f32| {
 			donut(u, v, dr, er).into_iter().map(|c| Dynamic::from_float(c)).collect::<Array>()
 		});
+		engine.register_fn("default_fn", |u: f32, v: f32| {
+			default_fn(u, v).into_iter().map(|c| Dynamic::from_float(c)).collect::<Array>()
+		});
 
 		let ast = engine.compile_file(path.into()).unwrap();
 		let mut scope = Scope::new();

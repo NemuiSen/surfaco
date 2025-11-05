@@ -1,7 +1,3 @@
-#[cfg(debug_assertions)]
-#[allow(unused_imports)]
-use dynamic;
-
 use glam::*;
 use std::{f32::consts::FRAC_PI_2, time::Instant};
 use winit::{

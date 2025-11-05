@@ -15,6 +15,7 @@ fn matrix() {
 }
 
 fn vertex(u, v) {
-	donut(u, v, 1.0, 0.5) + color_map(-1.0, 1.0, sin(v*5))
-	//complex(u, v)
+	return donut(u, v, 1.0, 0.5) + color_map(-1.0, 1.0, sin(v*5));
+	//return complex(u, v);
+	//return [u, v, 1.0, 1.0, 1.0, 1.0];
 }
